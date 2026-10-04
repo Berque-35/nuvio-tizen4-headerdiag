@@ -1,14 +1,14 @@
 {
   "streams": [
     {
-      "name": "NUVIO DIAG A",
-      "title": "A — Direct / no headers",
-      "url": "https://media.w3.org/2010/05/sintel/trailer.mp4"
+      "name": "NUVIO TEST A1",
+      "title": "A1 — MP4 Direct",
+      "url": "https://media.w3.org/wai/perspective-videos/keyboard-compatibility.mp4"
     },
     {
-      "name": "NUVIO DIAG B",
-      "title": "B — User-Agent only",
-      "url": "https://media.w3.org/2010/05/sintel/trailer.mp4",
+      "name": "NUVIO TEST A2",
+      "title": "A2 — MP4 + User-Agent",
+      "url": "https://media.w3.org/wai/perspective-videos/large-links-buttons-controls.mp4",
       "behaviorHints": {
         "proxyHeaders": {
           "request": {
@@ -18,15 +18,46 @@
       }
     },
     {
-      "name": "NUVIO DIAG C",
-      "title": "C — Referer + Origin (+ User-Agent)",
-      "url": "https://media.w3.org/2010/05/sintel/trailer.mp4",
+      "name": "NUVIO TEST A3",
+      "title": "A3 — MP4 + Referer + Origin",
+      "url": "https://media.w3.org/wai/perspective-videos/video-captions.mp4",
       "behaviorHints": {
         "proxyHeaders": {
           "request": {
             "User-Agent": "Mozilla/5.0 (SMART-TV; LINUX; Tizen 4.0) AppleWebKit/537.36 (KHTML, like Gecko) NuvioDiag/1.0",
             "Referer": "https://www.w3.org/",
             "Origin": "https://www.w3.org"
+          }
+        }
+      }
+    },
+    {
+      "name": "NUVIO TEST B1",
+      "title": "B1 — HLS Direct",
+      "url": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8"
+    },
+    {
+      "name": "NUVIO TEST B2",
+      "title": "B2 — HLS + User-Agent",
+      "url": "https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_16x9/bipbop_16x9_variant.m3u8",
+      "behaviorHints": {
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (SMART-TV; LINUX; Tizen 4.0) AppleWebKit/537.36 (KHTML, like Gecko) NuvioDiag/1.0"
+          }
+        }
+      }
+    },
+    {
+      "name": "NUVIO TEST B3",
+      "title": "B3 — HLS/fMP4 + Referer + Origin",
+      "url": "https://devstreaming-cdn.apple.com/videos/streaming/examples/img_bipbop_adv_example_fmp4/master.m3u8",
+      "behaviorHints": {
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (SMART-TV; LINUX; Tizen 4.0) AppleWebKit/537.36 (KHTML, like Gecko) NuvioDiag/1.0",
+            "Referer": "https://developer.apple.com/",
+            "Origin": "https://developer.apple.com"
           }
         }
       }
