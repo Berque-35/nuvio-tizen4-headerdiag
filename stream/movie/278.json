@@ -1,0 +1,35 @@
+{
+  "streams": [
+    {
+      "name": "NUVIO DIAG A",
+      "title": "A — Direct / no headers",
+      "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+    },
+    {
+      "name": "NUVIO DIAG B",
+      "title": "B — User-Agent only",
+      "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+      "behaviorHints": {
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (SMART-TV; LINUX; Tizen 4.0) AppleWebKit/537.36 (KHTML, like Gecko) NuvioDiag/1.0"
+          }
+        }
+      }
+    },
+    {
+      "name": "NUVIO DIAG C",
+      "title": "C — Referer + Origin (+ User-Agent)",
+      "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+      "behaviorHints": {
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (SMART-TV; LINUX; Tizen 4.0) AppleWebKit/537.36 (KHTML, like Gecko) NuvioDiag/1.0",
+            "Referer": "https://developers.google.com/",
+            "Origin": "https://developers.google.com"
+          }
+        }
+      }
+    }
+  ]
+}
