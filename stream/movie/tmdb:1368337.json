@@ -1,0 +1,35 @@
+{
+  "streams": [
+    {
+      "name": "NUVIO DIAG A",
+      "title": "A — Direct / no headers",
+      "url": "https://media.w3.org/2010/05/sintel/trailer.mp4"
+    },
+    {
+      "name": "NUVIO DIAG B",
+      "title": "B — User-Agent only",
+      "url": "https://media.w3.org/2010/05/sintel/trailer.mp4",
+      "behaviorHints": {
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (SMART-TV; LINUX; Tizen 4.0) AppleWebKit/537.36 (KHTML, like Gecko) NuvioDiag/1.0"
+          }
+        }
+      }
+    },
+    {
+      "name": "NUVIO DIAG C",
+      "title": "C — Referer + Origin (+ User-Agent)",
+      "url": "https://media.w3.org/2010/05/sintel/trailer.mp4",
+      "behaviorHints": {
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (SMART-TV; LINUX; Tizen 4.0) AppleWebKit/537.36 (KHTML, like Gecko) NuvioDiag/1.0",
+            "Referer": "https://www.w3.org/",
+            "Origin": "https://www.w3.org"
+          }
+        }
+      }
+    }
+  ]
+}
