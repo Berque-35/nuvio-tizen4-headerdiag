@@ -1,0 +1,9 @@
+{
+  "id": "dev.nuvio.tizen4.headerdiag",
+  "version": "1.0.0",
+  "name": "Nuvio Tizen 4 Header Diagnostic",
+  "description": "Static diagnostic addon for direct and proxy-header playback paths.",
+  "resources": ["stream"],
+  "types": ["movie"],
+  "catalogs": []
+}
