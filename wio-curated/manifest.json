@@ -1,5 +1,5 @@
 {
-  "name": "WioSinema Compact (TR candidate, no P2P)",
+  "name": "WioSinema Compact (HTTP candidates)",
   "version": "1.0.0",
   "scrapers": [
     {
