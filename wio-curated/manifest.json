@@ -1,0 +1,66 @@
+{
+  "name": "WioSinema Compact (TR candidate, no P2P)",
+  "version": "1.0.0",
+  "scrapers": [
+    {
+      "id": "wiosinema-vidup",
+      "name": "WioSinema - Vidup",
+      "description": "Turkish/English tagged HTTP stream candidate. Audio language not verified.",
+      "version": "1.0.0",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "contentLanguage": [
+        "tr",
+        "en"
+      ],
+      "formats": [
+        "m3u8",
+        "mp4"
+      ],
+      "filename": "https://raw.githubusercontent.com/Wiojelt/Nuvio-Addons/main/providers/wiosinema-vidup.js",
+      "enabled": true
+    },
+    {
+      "id": "wiosinema-hexa",
+      "name": "WioSinema - Hexa",
+      "description": "Turkish/English tagged HTTP stream candidate. Audio language not verified.",
+      "version": "1.0.0",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "contentLanguage": [
+        "tr",
+        "en"
+      ],
+      "formats": [
+        "m3u8",
+        "mp4"
+      ],
+      "filename": "https://raw.githubusercontent.com/Wiojelt/Nuvio-Addons/main/providers/wiosinema-hexa.js",
+      "enabled": true
+    },
+    {
+      "id": "wiosinema-vidcore",
+      "name": "WioSinema - Vidcore",
+      "description": "Turkish/English tagged HTTP stream candidate. Audio language not verified.",
+      "version": "1.0.0",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "contentLanguage": [
+        "tr",
+        "en"
+      ],
+      "formats": [
+        "m3u8",
+        "mp4"
+      ],
+      "filename": "https://raw.githubusercontent.com/Wiojelt/Nuvio-Addons/main/providers/wiosinema-vidcore.js",
+      "enabled": true
+    }
+  ]
+}
